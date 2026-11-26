@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writeups · cal1ber</title>
+  <meta name="description" content="CTF writeups in client-report format: findings, attack path and fixes. Active Directory, web, Windows and Linux privilege escalation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cal1ber.github.io/writeups/">
+  <meta property="og:title" content="Writeups · cal1ber">
+  <meta property="og:description" content="CTF writeups in client-report format: findings, attack path and fixes. Active Directory, web, Windows and Linux privilege escalation.">
+  <meta property="og:image" content="https://cal1ber.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="cal1ber, Ethical Hacker and Penetration Tester">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#070a08">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23070a08'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='16' fill='%234dffa0'%3E%3E_%3C/text%3E%3C/svg%3E">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; frame-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preload" href="../assets/fonts/redhat-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css?v=26">
+  <script src="../assets/js/pt-early.js?v=26"></script>
+</head>
+<body>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="who" href="../"><span class="led" aria-hidden="true"></span><b>cal1ber</b><span>@kali:~/writeups$</span></a>
+    <div class="nav-right">
+    <nav class="nav-links" aria-label="Sections">
+      <a href="../">cd ~</a>
+      <a href="../wall/">cd ~/wall</a>
+      <a href="../offline/">cd ~/offline</a>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="sq-hero" aria-label="Introduction">
+    <div class="prompt">$ ls -la ~/writeups</div>
+    <h1>Writeups<span class="us" aria-hidden="true">_</span></h1>
+    <p>Every box written up like a short client report: what was wrong, how it was chained, how to fix it. No flags, no passwords.</p>
+    <div class="stats-strip" id="wu-stats"></div>
+  </section>
+
+  <section id="writeups" class="fixed-sec">
+    <div class="wu-top">
+      <label class="wu-search"><span class="dim">grep -i</span><input id="wu-search" type="search" placeholder="box, technique, tag…" autocomplete="off" aria-label="Search writeups"></label>
+      <div class="filter-links" role="group" aria-label="Filter writeups">
+        <span class="dim">filter:</span>
+        <button class="filter" data-filter="all" aria-pressed="true">all</button>
+        <button class="filter" data-filter="ad" aria-pressed="false">ad</button>
+        <button class="filter" data-filter="windows" aria-pressed="false">windows</button>
+        <button class="filter" data-filter="linux" aria-pressed="false">linux</button>
+        <button class="filter" data-filter="web" aria-pressed="false">web</button>
+        <button class="filter" data-filter="bof" aria-pressed="false">bof</button>
+        <button class="filter" data-filter="htb" aria-pressed="false">htb</button>
+      </div>
+    </div>
+    <div class="wu-list" id="frames"><noscript><div class="empty">Enable JavaScript to load the writeup list.</div></noscript></div>
+    <div class="wu-more" id="wu-more"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="ft-bottom">
+    <span>© <span id="year">2026</span> cal1ber <i>·</i> no cookies <i>·</i> no trackers <i>·</i> strict CSP</span>
+    <span>All testing performed in authorised lab environments.</span>
+  </div>
+</footer>
+
+<script src="../assets/js/writeups.js?v=26"></script>
+<script src="../assets/js/main.js?v=26"></script>
+<script src="../assets/js/side.js?v=26"></script>
+</body>
+</html>

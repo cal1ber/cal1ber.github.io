@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cal1ber · Ethical Hacker &amp; Penetration Tester</title>
+  <meta name="description" content="Portfolio of cal1ber: penetration testing, Active Directory attack paths, web application testing and lab writeups.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cal1ber.github.io/">
+  <meta property="og:title" content="cal1ber · Ethical Hacker &amp; Penetration Tester">
+  <meta property="og:description" content="Portfolio of cal1ber: penetration testing, Active Directory attack paths, web application testing and lab writeups.">
+  <meta property="og:image" content="https://cal1ber.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="cal1ber, Ethical Hacker and Penetration Tester">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#070a08">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23070a08'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='16' fill='%234dffa0'%3E%3E_%3C/text%3E%3C/svg%3E">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; frame-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preload" href="assets/fonts/redhat-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css?v=26">
+  <script src="assets/js/pt-early.js?v=26"></script>
+</head>
+<body>
+
+<div id="intro" role="presentation">
+  <div class="glitch-stage" aria-hidden="true">
+    <div class="static"></div>
+    <div class="glitch" data-text="cal1ber">cal1ber</div>
+    <div class="glitch-sub">OFFENSIVE SECURITY</div>
+  </div>
+  <button class="skip" type="button">skip intro ⏎</button>
+</div>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="who"><span class="led" aria-hidden="true"></span><b>cal1ber</b><span>@kali:~$</span></div>
+    <div class="nav-right">
+    <nav class="nav-links" aria-label="Sections">
+      <a href="writeups/">./writeups</a>
+      <a href="wall/">./wall</a>
+      <a href="offline/">./offline</a>
+    </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero2" aria-label="Introduction">
+    <div class="prompt">$ whoami</div>
+    <h1>cal1ber<span class="us" aria-hidden="true">_</span></h1>
+    <p class="role">Florian <span class="dim">·</span> Ethical Hacker &amp; Penetration Tester</p>
+    <p><code>exploit · report · repeat</code></p>
+    <div class="status">
+      <span><i class="led" aria-hidden="true"></i>open to work</span>
+      <span>Italy · remote</span>
+      <span>next: CPTS → OSCP</span>
+      <span>IT · RO · EN</span>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="cat open">
+    <h2 class="cat-head"><button class="cat-toggle" type="button" aria-expanded="true" aria-controls="about-body"><span class="caret" aria-hidden="true">&gt;</span><span class="cat-title">// about <span class="c">cat about.md</span></span></button></h2>
+    <div class="cat-body" id="about-body"><div class="cat-inner">
+      <div class="about">
+        <div>
+          <p>My background is in network infrastructure, where I managed routing, firewalling and access networks for an internet service provider.</p>
+          <p>I then spent two years as an incident responder in a 24/7 international CSIRT, triaging alerts across SIEM and EDR platforms and handling incidents end to end, from phishing and account compromise to DDoS.</p>
+          <p>Today I focus on offensive security: Active Directory attack paths, web application testing and privilege escalation. Working on the defensive side taught me how attacks are detected; I use that to test more realistically and to write findings that teams can act on. I'm currently preparing for CPTS and OSCP.</p>
+          <div class="kvlines" aria-label="Skills">
+            <div><span class="k">offensive&gt;</span> Nmap, Burp Suite, Metasploit, Impacket, hashcat</div>
+            <div><span class="k">active-dir&gt;</span> BloodHound, Kerberoasting, ACL abuse, AD CS, delegation, lateral movement</div>
+            <div><span class="k">defensive&gt;</span> SIEM (Splunk), EDR (CrowdStrike, Defender), incident triage</div>
+            <div><span class="k">network&gt;</span> routing, firewalls, VPN, access networks</div>
+            <div><span class="k">scripting&gt;</span> PowerShell, Bash</div>
+          </div>
+        </div>
+        <div class="tl" aria-label="Experience">
+          <div class="tl-item offensive">
+            <div class="tl-date">2026</div>
+            <div class="tl-role">Offensive Security &amp; VA Specialist</div>
+            <div class="tl-org">Security consultancy · remote</div>
+            <ul><li>Vulnerability assessment of enterprise infrastructure (Nessus, Nmap, Burp Suite)</li><li>Manual validation of findings to separate exploitable issues from false positives</li><li>Technical reports with evidence, impact and remediation</li></ul>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">2024 – 2026</div>
+            <div class="tl-role">CSIRT Incident Responder</div>
+            <div class="tl-org">Global consulting firm · insurance sector · 24/7 international team</div>
+            <ul><li>Alert triage across SIEM, EDR and sandbox tooling</li><li>End-to-end incident handling: phishing, compromised accounts, DDoS</li><li>Coordination of authorised penetration tests and perimeter whitelisting</li></ul>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">2023 – 2024</div>
+            <div class="tl-role">Network Administrator</div>
+            <div class="tl-org">Internet service provider</div>
+            <ul><li>Routers, firewalls, OLT/DSLAM and PPPoE infrastructure</li><li>Troubleshooting and change management on production networks</li></ul>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section id="certs" class="fixed-sec">
+    <div class="fixed-head"><h2>// certifications <span class="c">ls ~/certs</span></h2></div>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-thumb cert-logo"><img src="assets/img/wall/logos/comptia-security-plus.webp" alt="CompTIA Security+ certified logo" width="420" height="383" loading="lazy" decoding="async"></div>
+        <div class="cert-info">
+          <span class="issuer">CompTIA · 2023</span>
+          <span class="name">Security+</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-thumb cert-logo"><img src="assets/img/wall/logos/comptia-network-plus.webp" alt="CompTIA Network+ certified logo" width="420" height="383" loading="lazy" decoding="async"></div>
+        <div class="cert-info">
+          <span class="issuer">CompTIA · 2022</span>
+          <span class="name">Network+</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-thumb cert-logo"><img src="assets/img/wall/logos/comptia-itf-plus.webp" alt="CompTIA IT Fundamentals+ certified logo" width="420" height="383" loading="lazy" decoding="async"></div>
+        <div class="cert-info">
+          <span class="issuer">CompTIA · 2021</span>
+          <span class="name">IT Fundamentals+</span>
+        </div>
+      </div>
+    </div>
+    <div class="wall-door"><a class="door" href="wall/"><span class="door-txt"><b>cd ~/wall</b><span class="dim"># every cert &amp; badge, pinned up</span></span><span class="door-arrow" aria-hidden="true">→</span></a></div>
+  </section>
+
+  <section id="writeups" class="fixed-sec">
+    <div class="fixed-head"><h2>// writeups <span class="c">ls ~/labs --pinned</span></h2></div>
+    <div class="wu-list" id="wu-featured"><noscript><div class="empty">Enable JavaScript to load the writeups.</div></noscript></div>
+    <div class="wu-all"><a class="door" href="writeups/"><span class="door-txt"><b>ls ~/writeups</b><span class="dim"># <span id="wu-all-count">every box</span></span></span><span class="door-arrow" aria-hidden="true">→</span></a></div>
+  </section>
+  <section id="tools" class="cat">
+    <h2 class="cat-head"><button class="cat-toggle" type="button" aria-expanded="false" aria-controls="tools-body"><span class="caret" aria-hidden="true">&gt;</span><span class="cat-title">// skills &amp; toolkit <span class="c">which -a</span></span></button></h2>
+    <div class="cat-body" id="tools-body"><div class="cat-inner">
+      <div class="caps">
+        <div class="cap">
+          <div class="cap-k"><h3>Offensive security</h3><p>Network, web and Active Directory assessments, from recon to report.</p></div>
+          <div class="cap-v">
+            <ul class="cap-skills"><li>Penetration testing (network, web, AD)</li><li>Vulnerability assessment</li><li>Active Directory attacks: Kerberos, AD CS, delegation, relay</li><li>Linux &amp; Windows privilege escalation</li><li>Web application testing (OWASP Top 10)</li><li>Password attacks &amp; hash cracking</li></ul>
+            <p class="cap-tools"><span>tools</span>nmap · Burp Suite · Nessus · ffuf · gobuster · sqlmap · Metasploit · BloodHound CE · Impacket · Rubeus · Certipy · mimikatz · hashcat</p>
+          </div>
+        </div>
+        <div class="cap">
+          <div class="cap-k"><h3>Detection &amp; incident response</h3><p>Two years in a 24/7 international CSIRT.</p></div>
+          <div class="cap-v">
+            <ul class="cap-skills"><li>Alert triage across SIEM, EDR and sandbox</li><li>Incident handling, end to end</li><li>Phishing campaign analysis &amp; reversing</li><li>Containment: IOC &amp; IP blocking</li><li>Account compromise investigation</li><li>DDoS &amp; web attack response</li><li>Incident reporting to management &amp; legal</li><li>Network traffic analysis</li><li>Ticketing &amp; case management</li></ul>
+            <p class="cap-tools"><span>tools</span>Splunk · CrowdStrike · Microsoft Defender / MDO · TheHive · CAPE Sandbox · Imperva · Akamai · ServiceNow · Wireshark</p>
+          </div>
+        </div>
+        <div class="cap">
+          <div class="cap-k"><h3>Networks &amp; systems</h3><p>Network administrator at an internet service provider, from the data centre to the customer edge.</p></div>
+          <div class="cap-v">
+            <ul class="cap-skills"><li>ASN peering in data centres (BGP)</li><li>Firewall installation &amp; configuration</li><li>Edge routers &amp; ISP access gear (DSLAM, OLT, PPPoE, CPE)</li><li>Routing &amp; switching, L2/L3, MPLS rerouting</li><li>Backbone troubleshooting &amp; service restoration</li><li>Wi-Fi site surveys &amp; hotspot rollout for large events</li><li>TCP/IP, DNS, DHCP, TLS</li><li>Linux &amp; Windows administration</li><li>Pivoting &amp; tunnelling</li><li>Bash &amp; PowerShell scripting</li></ul>
+            <p class="cap-tools"><span>tools</span>Cisco · MikroTik · Palo Alto · FRITZ!Box · Kali · VMware · Docker · SSH · socat · PowerShell</p>
+          </div>
+        </div>
+        <div class="cap">
+          <div class="cap-k"><h3>Hardware &amp; embedded</h3><p>Board-level work, and where I'm heading next: automotive security.</p></div>
+          <div class="cap-v">
+            <ul class="cap-skills"><li>Electronics, soldering &amp; board-level diagnosis</li><li>Flash memory programmers</li><li>ECUs &amp; gateways, CAN, UDS / J1939 <em>(learning)</em></li><li>TARA, ISO/SAE 21434, UN R155 <em>(learning)</em></li></ul>
+          </div>
+        </div>
+        <div class="cap">
+          <div class="cap-k"><h3>Frameworks &amp; reporting</h3><p>How findings get scored, mapped and explained.</p></div>
+          <div class="cap-v">
+            <ul class="cap-skills"><li>OWASP Top 10</li><li>MITRE ATT&amp;CK</li><li>CVSS-based vulnerability prioritisation</li><li>Pentest reports &amp; remediation guidance</li></ul>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <a class="sq-door" href="offline/"><span class="sq-k">// afk</span><span class="sq-t">~/offline</span><span class="sq-d">What do I do while I'm afk? Videos, photography, hardware repair and many more.</span><span class="door-arrow" aria-hidden="true">→</span></a>
+
+  <section id="contact" class="contact2">
+    <div class="prompt">$ nc -lvnp 443</div>
+    <h2>Let's talk.</h2>
+    <p>Open to penetration testing and offensive security roles, remote or in Italy. Email is the best way to reach me.</p>
+    <div class="cta">
+      <button class="btn primary" id="mail" type="button" aria-expanded="false" aria-controls="mail-pick">Email me</button>
+      <a class="btn" href="https://github.com/cal1ber" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+
+    <div class="mail-pick" id="mail-pick" aria-hidden="true" inert>
+      <div class="mp-in"><div class="mp-box">
+        <div class="mp-q"><span class="p">$</span> ./contact --transport=?<span class="cursor" aria-hidden="true"></span></div>
+        <button class="mp-opt" type="button" data-mail="plain"><b>[1] plaintext</b><span>just send it. no judgement.</span></button>
+        <button class="mp-opt" type="button" data-mail="pgp" aria-expanded="false" aria-controls="mp-pgp"><b>[2] encrypted</b><span>should I trust you? prove it.</span></button>
+        <div class="mp-pgp" id="mp-pgp" aria-hidden="true" inert>
+          <div class="mp-in">
+            <p>Good instincts.</p>
+            <p class="pgp-fp"><span class="k">pgp&gt;</span> <span class="fp">C52E 696C 99C2 D113 0ACF B729 6810 1230 C994 EE11</span></p>
+            <div class="mp-actions">
+              <a class="btn" href="pgp.asc" download="cal1ber-pgp.asc" type="application/pgp-keys">download key</a>
+              <button class="btn primary" type="button" data-mail="send">open mail</button>
+            </div>
+          </div>
+        </div>
+        <div class="mp-addr"><span class="k">addr&gt;</span><span class="mp-addr-v" id="mail-addr"></span><button class="mp-copy" type="button" data-mail="copy">copy</button></div>
+      </div></div>
+    </div>
+    <a class="logout" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"><span class="p">$</span>logout</a>
+    <p class="logout-msg">Connection to cal1ber closed.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="ft-bottom">
+    <span>© <span id="year">2026</span> cal1ber <i>·</i> no cookies <i>·</i> no trackers <i>·</i> strict CSP</span>
+    <span>All testing performed in authorised lab environments.</span>
+  </div>
+</footer>
+
+<script src="assets/js/writeups.js?v=26"></script>
+<script src="assets/js/main.js?v=26"></script>
+<script src="assets/js/side.js?v=26"></script>
+</body>
+</html>

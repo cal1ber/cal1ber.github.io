@@ -1,0 +1,7 @@
+# Found a security issue on this site? Thanks, please tell me.
+# Encrypted reports welcome: the key below matches the fingerprint on the home page.
+Contact: mailto:ShouldITrustYou@proton.me
+Expires: 2027-10-31T23:00:00.000Z
+Encryption: https://cal1ber.github.io/pgp.asc
+Preferred-Languages: en, it
+Canonical: https://cal1ber.github.io/.well-known/security.txt
